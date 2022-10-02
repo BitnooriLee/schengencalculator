@@ -1,0 +1,16 @@
+.container {
+  max-width: 960px;
+}
+
+
+.form-label{
+  font-size:calc(1.325rem + .9vw);
+  align-content: center;
+}
+
+
+.col-md-5{
+  flex:0 0 auto;
+  width:41.66666667%;
+}
+
