@@ -75,7 +75,7 @@
 </head>
 
 <body class="d-flex h-100 text-center text-bg-dark">
-
+  <div class="container">
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
       <div>
@@ -101,7 +101,9 @@
     </section>
     </main>
 <section id="choose-country" >
-      <label for="country" class="form-label">Select your citizenship status</label>
+    <h1>Select your citizenship status</h1>
+    <div class="row g-3">
+      <label for="country" class="form-label">Country</label>
       <div class="col-md-5"> 
       <select class="form-select" id="country" required>
         <option value="">Choose...</option>
@@ -170,7 +172,8 @@
         <option>Uruguay</option>
         <option>Vanuatu****</option>
         <option>Venezuela</option>
-      </select>
+    </select>
+    </div>
       <div class="invalid-feedback">
         Please select a valid country.
       </div>
@@ -181,10 +184,107 @@
       <button name="countrysubmit" id="countrysubmit" type="button" class="btn btn-primary btn-lg px-4 gap-3">Check
       </button>
     </div>//-->
-
     <div>
       <p class="lead" id="country-output"></p>
     </div>
+  </section>
+
+
+
+  <section id="Schengen-stay">
+      <h1>Calculate your staying</h1>
+      <div class="row g-3">
+      <div class="col-md-4"> 
+  <label for="country" class="form-label">Country</label>
+  <select class="form-select" id="country" required>
+      <option value="">Choose...</option>
+      <option>Schengen Area Countries</option>
+      <option>Other</option>
+      <option>Albania*</option>
+      <option>Andorra</option>
+      <option>Antigua and Barbuda</option>
+      <option>Argentina</option>
+      <option>Australia</option>
+      <option>Bahamas</option>
+      <option>Barbados</option>
+      <option>Bosnia and Herzegovina*</option>
+      <option>Brazil</option>
+      <option>Brunei</option>
+      <option>Canada</option>
+      <option>Chile</option>
+      <option>Colombia</option>
+      <option>Costa Rica</option>
+      <option>Dominica</option>
+      <option>El Salvador</option>
+      <option>Georgia</option>
+      <option>Grenada</option>
+      <option>Guatemala</option>
+      <option>Holy See (Vatican City State)</option>
+      <option>Honduras</option>
+      <option>Hong Kong S.A.R***</option>
+      <option>Israel</option>
+      <option>Japan</option>
+      <option>Kiribati</option>
+      <option>Macao S.A.R***</option>
+      <option>Malaysia</option>
+      <option>Marshall Islands</option>
+      <option>Mauritius</option>
+      <option>Mexico</option>
+      <option>Micronesia</option>
+      <option>Moldova*</option>
+      <option>Monaco</option>
+      <option>Montenegro*</option>
+      <option>Nauru</option>
+      <option>New Zealand</option>
+      <option>Nicaragua</option>
+      <option>North Macedonia*</option>
+      <option>Palau</option>
+      <option>Panama</option>
+      <option>Paraguay</option>
+      <option>Peru</option>
+      <option>Saint Kitts and Nevis</option>
+      <option>Saint Lucia</option>
+      <option>Saint Vincent</option>
+      <option>Samoa</option>
+      <option>Serbia*</option>
+      <option>Seychelles</option>
+      <option>Singapore</option>
+      <option>Solomon Islands</option>
+      <option>South Korea</option>
+      <option>Taiwan**</option>
+      <option>Timor Leste</option>
+      <option>Tonga</option>
+      <option>Trinidad and Tobago</option>
+      <option>Tuvalu</option>
+      <option>Ukraine</option>
+      <option>United Arab Emirates</option>
+      <option>United Kingdom</option>
+      <option>United States of America</option>
+      <option>Uruguay</option>
+      <option>Vanuatu****</option>
+      <option>Venezuela</option>
+  </select>
+      </div>
+
+    
+  
+      <div class="col-md-4">
+          <label for="entering_date" class="form-label">Entering Date</label>
+          <input type="date" class="date-select" id="entering_date" name="entering_date" required>
+          <div class="invalid-feedback">
+            Please provide a valid state.
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="leaving_date" class="form-label">Leaving Date</label>
+            <input type="date" class="date-select" id="leaving_date" name="leaving_date" required>      
+          <div class="invalid-feedback">
+            Zip code required.
+          </div>
+        </div>
+     </div>
+
   </section>
 
 <section id="Schenge-detail">
@@ -213,11 +313,12 @@
     <h1>Contact</h1>
   </section>
 </main>
+
     <footer class="mt-auto text-white-50">
       <p>Application by <a href="https://github.com/BitnooriLee" class="text-white">Bitnoori Lee</a>.</p>
     </footer>
 
-
+</div>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="form-validation.js"></script>
